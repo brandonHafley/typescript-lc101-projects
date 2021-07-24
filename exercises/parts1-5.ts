@@ -20,7 +20,7 @@ class Spacecraft {
         return hoursToLocation / 24;
     }
 
-    printDaysToLocation(location: SpaceLocation) {
+    printDaysToLocation(location: SpaceLocation): void {
         console.log(`${this.name} will take ${this.getDaysToLocation(location.kilometersAway)} days to get to ${location.name}`);
     }
 }
